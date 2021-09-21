@@ -1,0 +1,146 @@
+.first-section {
+    padding: 4rem 1.25rem 0;
+  }
+  
+  .first-section p {
+    margin-bottom: 2.187rem;
+  }
+  
+  .mini-container {
+    margin-bottom: 1.25rem;
+    padding: 0.937rem;
+    transition: 0.3s;
+    font-size: var(--normal-font-size);
+    color: rgb(119, 119, 119);
+    background-color: #F5F5F5;
+  }
+  
+  .mini-container:hover {
+    color: var(--white);
+    background-color: var(--primary-color);
+  }
+  
+  .mini-container h3:hover{
+    color: var(--white);
+  }
+  
+  .mini-container:last-of-type {
+    margin-bottom: 3.75rem;
+  }
+  
+  .mini-container i.fa {
+    border-radius: 5%;
+    width: 5rem;
+    height: 5rem;
+    font-size: 1.875rem;
+    line-height: 1.095;
+    padding: 1.438rem;
+  }
+  
+  .icon {
+    color: var(--white);
+    background-color: var(--primary-color);
+  }
+  
+  .second-section {
+    margin: 0;
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 4rem 1.25rem 0;
+    height: 480px;
+    background-image: url(../img/wavy-dots.png);
+  }
+  
+  .show-slide {
+    display: none;
+    margin-top: 2rem;
+  }
+  
+  .show-slide img {
+    width: 25%;
+  }
+  
+  .show-slide p {
+    padding: 1rem 3rem;
+  }
+  
+  .slider-container {
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  .left, .right {
+    cursor: pointer;
+    position: absolute;
+    font-size: 30pt;
+    color: rgba(204, 204, 204, 0.65);
+    top: 50%;
+    left: 30px;
+    transition: 0.4s ease;
+    border-radius: 3px;
+  }
+  
+  .right {
+    left: initial;
+    right: 30px;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {  
+    from {  
+        opacity: .4
+    }  
+    to {  
+        opacity: 1
+    }  
+  }  
+  
+  @media screen and (min-width: 768px) {
+    .mini-container {
+      margin: 1rem;
+      padding: 0.937rem;
+      font-size: var(--normal-font-size);
+      background-color: #F5F5F5;
+    }
+    
+    .mini-container p {
+      margin-bottom: 0;
+    }
+  
+    .mini-container:last-of-type {
+      margin-bottom: auto;
+    }
+  
+    .first-section {
+      padding-bottom: 5rem;
+    }
+  
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 1.25rem;
+    }
+  
+    .second-section {
+      height: 100%;
+    }
+  
+    .show-slide p {
+      margin-bottom: 3rem;
+    }
+  }
+  
+  @media screen and (min-width: 990px) {
+    .second-section {
+      height: 100%;
+    }
+  
+    .second-section {
+      margin-bottom: 3rem;
+    }
+  }
